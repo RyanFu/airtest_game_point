@@ -4,7 +4,8 @@ __author__ = "chihai"
 from airtest.core.api import *
 from utils import *
 from constant import *
-login_mode ='local'
+login_mode ='facebook'
+auto_setup(__file__)
 #binggojourny
 def uninstall_BJ():
     status = os.popen(
@@ -123,12 +124,12 @@ driver.find_element_by_xpath("//a[@href='/report/analysis']").click()
 driver.find_element_by_xpath("//input[@type='text']").send_keys(game_id)
 sleep(3)
 driver.find_element_by_xpath("//*[@id=\"contentlist\"]/li/span").click()
-sleep(5)
-driver.find_element_by_name("getdata").click()
-sleep(5)
-driver.find_element_by_name("getdata").click()
-sleep(5)
+sleep(10)
 Logging("获取数据")
+driver.find_element_by_name("getdata").click()
+sleep(5)
+driver.find_element_by_name("getdata").click()
+sleep(5)
 driver.find_element_by_name("getdata").click()
 sleep(10)
 driver.execute_script('window.scrollTo(0,400)')
@@ -169,4 +170,4 @@ driver.snapshot()
 
 
 
-
+    

@@ -3,7 +3,6 @@ __author__ = "chihai"
 
 from airtest.core.api import *
 app_id = "com.dreamhomematch.casual.free"
-login_mode ='local'
 #开始战斗（texture）
 start_play="btn_startlevel"
 #开始战斗-确定按钮(name)
@@ -23,7 +22,7 @@ char_text="BlackLineDown"
 char_skip="BtnSkip"
 app_id = "com.dreamhomematch.casual.free"
 #DHM配置
-login_mode ='local'
+login_mode ='facebook'
 from utils import *
 #开启APP
 auto_setup(__file__)

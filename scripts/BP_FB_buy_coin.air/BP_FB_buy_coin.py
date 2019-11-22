@@ -5,7 +5,7 @@ from airtest.core.api import *
 from  utils import *
 
 from poco.drivers.android.uiautomation import AndroidUiautomationPoco
-login_mode ='local'
+login_mode ='facebook'
 poco = AndroidUiautomationPoco(use_airtest_input=True, screenshot_each_action=False)
 
 auto_setup(__file__)

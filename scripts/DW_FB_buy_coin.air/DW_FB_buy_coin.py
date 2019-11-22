@@ -2,7 +2,7 @@
 __author__ = "chihai"
 
 from airtest.core.api import *
-login_mode ='local'
+login_mode ='facebook'
 from utils import *
 auto_setup(__file__)
 #DoubleWin
